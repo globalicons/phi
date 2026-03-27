@@ -41,6 +41,7 @@
     "test:inspect:watch": "nodemon --inspect node_modules/ava/profile",
     "lint": "gulp lint",
     "clean": "del dist docs",
+    "prepare": "npm run build",
     "build": "npm-run-all --parallel build:*",
     "prebuild": "npm-run-all clean",
     "build:index": "babel --source-maps --out-file-extension .cjs --out-dir dist index.js",
